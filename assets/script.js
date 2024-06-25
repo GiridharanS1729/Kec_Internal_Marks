@@ -44,9 +44,11 @@ function calculate() {
     let tot = cc + tt + sap;
     let e = ((50 - tot) * 10) / 6;
 
+    iid.textContent = "Internal: " + tot.toFixed(2) + "/40";
+    eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100";
     if (tot < 40 && tot > 0 && e > 0 && e < 100) {
         iid.textContent = "Internal: " + tot.toFixed(2) + "/40";
-        eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100 to Get Pass";
+        eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100";
 
         err.textContent = ""; // Clear previous errors
         console.log(t, tt, cc);
@@ -54,6 +56,8 @@ function calculate() {
         console.log("External Marks to Score= ", e, "/100");
     } else {
         if (cc > 20 || cc < -1) {
+            iideid.textContent="";
+            eid.textContent="";
             err.textContent = "CAT marks should be between 0 and 100 inclusive.";
         } else if (tt < 0 || tt > 100) {
             err.textContent = "Tutorial marks should be between 0 and 100 inclusive.";
