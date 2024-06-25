@@ -2,6 +2,8 @@
 
 Calculate internal and external marks based on tutorial and Internal Assesment marks for college.
 
+[View](https://kie.netlify.app/) my website .
+
 ## Description ℹ️
 
 This project allows users to input tutorial and CAT (Continuous Assessment Test) scores to calculate internal and external marks required for college assessments. It provides a clear breakdown of total marks and external marks needed to achieve a passing grade.
