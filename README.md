@@ -1,6 +1,6 @@
 # Internal and External Marks Calculator 🎓
 
-Calculate internal and external marks based on tutorial and CAT scores for college assessments.
+Calculate internal and external marks based on tutorial and Internal Assesment marks for college.
 
 ## Description ℹ️
 
@@ -39,13 +39,6 @@ This project allows users to input tutorial and CAT (Continuous Assessment Test)
    git clone github.com/GiridharanS1729/Kec_Internal_Marks.git
 2. Open index.html in your web browser.
 
-### Credits 🌟
-Developed by Giridharan S
-### License 📝
-  This project is licensed under the MIT License. See the [License](LICENSE) file for details.
-
-
-
 ### Explanation:
 - **Description**: Provides a brief overview of what the project does.
 - **Features**: Highlights key functionalities of the project.
@@ -59,3 +52,9 @@ Developed by Giridharan S
 - **Footer**: Includes a footer with a copyright notice.
 
 Feel free to customize the sections further based on your specific project details and requirements.
+
+### Credits 🌟
+  Developed by Giridharan S
+
+### License 📝
+  This project is licensed under the MIT License. See the [License](LICENSE) file for details.
