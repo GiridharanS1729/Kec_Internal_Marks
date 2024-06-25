@@ -29,8 +29,8 @@ This project allows users to input tutorial and CAT (Continuous Assessment Test)
 
 ## Screenshots 📷
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1](./assets/Screenshots/input.png)
+![Screenshot 2](./assets/Screenshots/output.png)
 
 ## How to Run Locally 🖥️
 
