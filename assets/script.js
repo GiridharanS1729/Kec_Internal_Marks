@@ -46,7 +46,7 @@ function calculate() {
 
     if (tot < 40 && tot > 0 && e > 0 && e < 100) {
         iid.textContent = "Internal: " + tot.toFixed(2) + "/40";
-        eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100";
+        eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100 to Get Pass";
 
         err.textContent = ""; // Clear previous errors
         console.log(t, tt, cc);
