@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Marks Calculator</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Marks Calculator</h1>
+        </div>
+        <div class="form-container">
+            <label for="n">Best of N Tutorial:</label>
+            <input type="number" name="n" id="n" value="" placeholder="Enter Best of n Tutorial" min="1" max="20"><br/>
+
+            <label for="tut">Tutorial Marks (20 or 100):</label>
+            <input type="text" name="tut" id="tut" placeholder="Enter Tut Marks (e.g., 18 17 20 or 95 99 100)"><br/>
+
+            <label for="cat">CAT Marks (100):</label>
+            <input type="text" name="cat" id="cat" placeholder="Enter Cat Marks (e.g., 85 90)"><br/>
+
+            <label for="sap">SAP:</label>
+            <input type="number" name="sap" id="sap" value="5" min="2" max="5" placeholder="Enter SAP Value (1 to 5)"><br/>
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div class="results-container">
+            <p><span id="internal"></span></p>
+            <p><span id="external"></span></p>
+            <p id="err" class="error"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 Giridharan S</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
