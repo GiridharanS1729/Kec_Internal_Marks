@@ -9,14 +9,15 @@ function calculate() {
     let err = document.getElementById("err");
 
     let cat_length = 2;
+    if (!n || tu.length === 0 || ca.length === 0 || isNaN(sap)) {
+        err.textContent = "Please enter all values.";
+        return;
+    }
     if (n > tu.length) {
         err.textContent = "n must be lesser than the number of tutorial marks entered.";
         return;
     }
-    if (!n || tu.length === 0 || ca.length === 0 || isNaN(sap)) {
-        err.textContent = "Please enter all values correctly.";
-        return;
-    }
+    
 
     // Sort tutorial and CAT marks in descending order
     tu.sort((a, b) => b - a);
