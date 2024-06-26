@@ -13,12 +13,16 @@ function calculate() {
         err.textContent = "n must be lesser than the number of tutorial marks entered.";
         return;
     }
+    if (!n || tu.length === 0 || ca.length === 0 || isNaN(sap)) {
+        err.textContent = "Please enter all values correctly.";
+        return;
+    }
 
-    // Sort tutorial marks in descending order
+    // Sort tutorial and CAT marks in descending order
     tu.sort((a, b) => b - a);
     ca.sort((a, b) => b - a);
 
-    // Take the best n marks
+    // Take the best n tutorial marks and best 2 CAT marks
     let t = tu.slice(0, n);
     let cat = ca.slice(0, 2);
 
@@ -44,20 +48,17 @@ function calculate() {
     let tot = cc + tt + sap;
     let e = ((50 - tot) * 10) / 6;
 
-    iid.textContent = "Internal: " + tot.toFixed(2) + "/40";
-    eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100";
     if (tot < 40 && tot > 0 && e > 0 && e < 100) {
         iid.textContent = "Internal: " + tot.toFixed(2) + "/40";
         eid.textContent = "Sem Marks: " + e.toFixed(2) + "/100";
-
         err.textContent = ""; // Clear previous errors
         console.log(t, tt, cc);
         console.log("Total Marks= ", tot, "/40");
         console.log("External Marks to Score= ", e, "/100");
     } else {
         if (cc > 20 || cc < -1) {
-            iideid.textContent="";
-            eid.textContent="";
+            iid.textContent = "";
+            eid.textContent = "";
             err.textContent = "CAT marks should be between 0 and 100 inclusive.";
         } else if (tt < 0 || tt > 100) {
             err.textContent = "Tutorial marks should be between 0 and 100 inclusive.";
