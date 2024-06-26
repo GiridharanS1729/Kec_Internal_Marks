@@ -13,6 +13,7 @@ function calculate() {
         err.textContent = "n must be lesser than the number of tutorial marks entered.";
         return;
     }
+    if(!n && !tu && !ca && !sap){alert("Enter All Values");return;}
 
     // Sort tutorial marks in descending order
     tu.sort((a, b) => b - a);
