@@ -11,10 +11,10 @@ function calculate() {
     let err = document.getElementById("err");
 
     // Check if all values are entered
-    if (!n || !sap || tu.length === 0 || ca.length === 0) {
-        err.textContent = "Please enter all values.";
-        return;
-    }
+    // if (!n || !sap || tu.length === 0 || ca.length === 0) {
+    //     err.textContent = "Please enter all values.";
+    //     return;
+    // }
 
     // Parse SAP value to a number
     sap = Number(sap);
