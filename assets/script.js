@@ -8,16 +8,29 @@ function calculate() {
     let iid = document.getElementById("internal");
     let err = document.getElementById("err");
 
-    let cat_length = 2;
-    if (!n || tu.length === 0 || ca.length === 0 || isNaN(sap)) {
-        err.textContent = "Please enter all values.";
+    // Validation checks
+    if (!n || n < 1 || n > 20) {
+        err.textContent = "Please enter a valid number of best marks (n) between 1 and 20.";
         return;
     }
-    if (n > tu.length) {
-        err.textContent = "n must be lesser than the number of tutorial marks entered.";
+
+    if (tu.length < n || tu.length >= 20) {
+        err.textContent = "The number of tutorial marks entered must be at least n and less than 20.";
         return;
     }
-    
+
+    if (ca.length < 1 || ca.length > 3) {
+        err.textContent = "Please enter 1, 2, or 3 CAT marks.";
+        return;
+    }
+
+    if (![2, 3, 4, 5].includes(sap)) {
+        err.textContent = "SAP marks must be 2, 3, 4, or 5.";
+        return;
+    }
+
+    // Clear previous error messages
+    err.textContent = "";
 
     // Sort tutorial and CAT marks in descending order
     tu.sort((a, b) => b - a);
